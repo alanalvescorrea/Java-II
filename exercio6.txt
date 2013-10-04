@@ -1,0 +1,75 @@
+import java.awt.*;
+import javax.swing.*;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+
+public class Cadastro implements ActionListener{
+
+JFrame janela = new JFrame();
+JPanel painel = new JPanel();
+JLabel rotulo1 = new JLabel("Nome ");
+JLabel label3 = new JLabel("");
+JTextField texto1 = new JTextField(30);
+JLabel rotulo2 = new JLabel("Endereço");
+JTextField texto2 = new JTextField(30);
+JButton botao = new JButton("Salvar");
+JComboBox combo1 = new JComboBox();
+JComboBox combo2 = new JComboBox();
+
+public static void main(String args[]) {
+new Cadastro();
+}
+
+public Cadastro() {
+janela.setSize(460, 450);
+janela.setLocation(490, 300);
+janela.setTitle("Cadastro");
+janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+janela.setLayout(new GridLayout(3,2,5,7));
+
+painel.add(rotulo1);
+painel.add(texto1);
+painel.add(rotulo2);
+painel.add(texto2);
+painel.add(combo1);
+painel.add(combo2);
+painel.add(botao);
+botao.addActionListener(this);
+
+combo1.addItem("Casado");
+combo1.addItem("Solteiro");
+combo2.addItem("Masculino");
+combo2.addItem("Feminino");
+
+janela.add(painel);
+janela.setVisible(true);
+
+
+}
+
+
+public void actionPerformed(ActionEvent e) {
+
+JOptionPane.showMessageDialog(null, texto1);
+JOptionPane.showMessageDialog(null, texto2);
+
+if (e.getSource() == botao) {
+
+int indice = combo1.getSelectedIndex();
+if (indice == 0)
+JOptionPane.showMessageDialog(null, combo1.getSelectedItem());
+if (indice == 1)
+JOptionPane.showMessageDialog(null, combo1.getSelectedItem());
+}
+
+int indice1 = combo2.getSelectedIndex();
+if (indice1 == 0)
+JOptionPane.showMessageDialog(null, combo2.getSelectedItem());
+if (indice1 == 1)
+JOptionPane.showMessageDialog(null, combo2.getSelectedItem());
+}
+
+}

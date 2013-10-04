@@ -1,0 +1,8 @@
+Exercício_2
+
+
+a) p.alteraEndereço(); - chamada incorreta porque o parâmetro está vazio;
+b) p.alteraEndereço (double v) - chamada errada porque está usando no parâmentro o tipo de identificador incorreto.Deveria ser String e nao double
+c) p.alteraEndereço ("Av. unisinos, 950") - chamada correta
+d) String novoEndereço = "Avenida. Unisinos, 950" - chamada errada. Essa descrição nao é uma chamada e sim uma declaração e inicialização de variavel.
+e) System.out.println (p.alteraEndereço("Av. Unisinos, 950")); - chamda errada. Erro de sintaxe.

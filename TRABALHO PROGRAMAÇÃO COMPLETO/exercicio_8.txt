@@ -1,0 +1,11 @@
+exercicio_8
+
+
+
+a)correta
+b)errado. erro de sintax na declaração do construtor e na criação do construtor
+c)errado. erro de sintaxe e erro na declaração dos parametros
+d)errado. declaração e criação do construtor errado
+e - f)errado. construtor nao criado, erro de sintaxe
+
+h) nome da classe é Produto.

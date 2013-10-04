@@ -1,0 +1,18 @@
+exercicio_10
+
+Chamada correta para construtores.
+
+
+
+public Produto (String umNome, double umPreço) //CONTRUTOR 1
+	Produto p = new Pruto("banana", 2.45);  //chamada correta
+**********
+
+
+public Produto (String nome)        //CONTRUTOR 2
+	Produto p;
+	p=new Produto ("laranja");   //chamada correta
+*********
+
+public Produto () // CONSTRUTOR 3
+	Produto p=new Produto ();

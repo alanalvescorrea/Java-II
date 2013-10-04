@@ -1,0 +1,43 @@
+package sobrecarga;
+
+public class Material {
+
+	// atributos*/
+	private int codigo= 2432;
+	private String nome= "bultilbrometo";
+	int saldo = 0;
+	
+	
+
+
+	//sobrecarga de métodos
+	public Material(int novoCodigo, String novoNome, int novoSaldo){  
+		   codigo = novoCodigo;
+		   nome = novoNome;
+		   saldo = novoSaldo;
+		}
+	
+	public Material(int novoCodigo, String novoNome){  
+		   codigo = novoCodigo;
+		   nome = novoNome;}
+}
+
+**************************
+package sobrecarga;
+
+public class InstanciaMateria {
+
+	
+	public static void main(String[] args) {
+		
+		
+		
+		//formas de instanciar um objeto
+		Material m1 = new Material(21, "Pedra", 98);
+		
+		Material m1;
+		m1= new Material (32, "acúcar", 200);
+
+	}
+
+}

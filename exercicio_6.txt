@@ -1,0 +1,13 @@
+exercicio_6
+
+
+Public class Circulo
+
+private int raio= 2432;
+
+		
+		
+	//construtor classe Raio
+		
+public Circulo(int novoRaio){  
+raio = novoRaio;}

@@ -1,0 +1,19 @@
+
+public class Material {
+
+	
+	
+		// atributos*/
+		private int codigo= 2432;
+		private String nome= null;
+		private int saldo=250;
+		
+		
+	
+		
+		public Material(int novoCodigo, String novoNome, int novoSaldo){  
+			   codigo = novoCodigo;
+			   nome = novoNome;
+			   saldo = novoSaldo;
+		
+		}
